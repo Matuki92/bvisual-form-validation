@@ -16,6 +16,7 @@ const main = () => {
       password: '',
       repeatedPassword: '',
       gender: '',
+      valid: false
     }
     for (let item in formData) {
       $(`input#${item}`).val('');
