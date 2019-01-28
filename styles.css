@@ -1,0 +1,65 @@
+/* -- css reset -- */
+
+body {
+  margin: 0;
+  font-size: 24px;
+  background: rgb(220, 220, 220);
+  color: white;
+}
+
+/* -- Layout -- */
+
+.container {
+  width: 70%;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  background: rgb(44, 44, 44);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#header {
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: inherit;
+}
+
+/* -- form style -- */
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  min-width: 400px;
+}
+
+#form .field {
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+#form .field label {
+  display: block;
+}
+
+#form .field input,
+#form .field select,
+#form .field button {
+  font-size: inherit;
+  min-width: 300px;
+}
+
+#form .field button {
+  margin: 5px 0;
+}
+
+#form .field .errors {
+  height: 20px;
+  margin: 0;
+  color: red;
+}
