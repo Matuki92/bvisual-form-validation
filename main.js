@@ -22,6 +22,7 @@ const main = () => {
       $(`input#${item}`).val('');
     }
     $('#gender').val($('#gender option:first').val());
+    $('.errors').html(null);
   }
 
   const checkForInputErrors = ({ value, name, id }) => {

@@ -34,11 +34,10 @@ button {
   flex-wrap: wrap;
   justify-content: space-around;
 
-  min-width: 400px;
 }
 
 #form .field {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 350px;
 }
 
@@ -50,7 +49,7 @@ button {
 #form .field select,
 #form .field button {
   font-size: inherit;
-  min-width: 300px;
+  width: 300px;
 }
 
 #form .field button {
@@ -60,11 +59,27 @@ button {
 #form .field .errors {
   height: 20px;
   margin: 0;
+  font-size: 1.2rem;
   color: red;
 }
 
 @media (max-width: 768px) {
+
+
   .container {
     width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  #form .field input,
+  #form .field select,
+  #form .field button {
+    width: 100%;
+  }
+
+  #form .field {
+    width: 80%;
+    margin: 15px auto;
   }
 }
