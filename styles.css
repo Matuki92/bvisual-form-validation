@@ -4,7 +4,6 @@ body {
   margin: 0;
   font-size: 24px;
   background: rgb(220, 220, 220);
-  color: white;
 }
 
 /* -- Layout -- */
@@ -16,11 +15,17 @@ body {
   margin: 0 auto;
   padding: 15px;
   background: rgb(44, 44, 44);
-  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0;
 }
 
 button {
@@ -34,6 +39,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-around;
 
+  color: white;
 }
 
 #form .field {
@@ -49,7 +55,7 @@ button {
 #form .field select,
 #form .field button {
   font-size: inherit;
-  width: 300px;
+  width: 100%;
 }
 
 #form .field button {
@@ -63,19 +69,12 @@ button {
   color: red;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 480px) {
 
   .container {
     width: 100%;
     padding: 0;
-    border: none;
-  }
-
-  #form .field input,
-  #form .field select,
-  #form .field button {
-    width: 100%;
+    border-radius: none;
   }
 
   #form .field {
